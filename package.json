@@ -1,0 +1,16 @@
+{
+  "name": "cordova-plugin-mas-automation",
+  "version": "1.6.10",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-mas-automation",
+    "platforms": ["ios", "android"]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Anthony Ward",
+  "license": "MIT"
+}

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-mas-automation" version="1.6.10" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-mas-core-pod</name>
+    
+    <dependency id="cordova-plugin-mas-core" version="1.6.10" />
+
+    <platform name="ios">
+            
+        <dependency id="cordova-plugin-cocoapod-support"/>
+
+        <pods-config ios-min-version="9.0" use-frameworks="true">
+            <source url="https://github.com/CocoaPods/Specs.git" />
+        </pods-config>
+        
+        <pod name="MASFoundation" version="1.6.10" />
+        <pod name="MASUI" version="1.6.10" />
+        <pod name="MASConnecta" version="1.6.10" />
+        <pod name="MASIdentityManagement" version="1.6.10" />
+        <pod name="MASStorage" version="1.6.10" />
+
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>The application needs a location to use the MAS backend services</string>
+        </edit-config>
+
+    </platform>
+
+    <platform name="android">
+
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+
+    </platform>
+
+</plugin>

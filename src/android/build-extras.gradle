@@ -1,0 +1,18 @@
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+       compile 'com.ca:mas:1.6.10'
+       compile 'com.ca:masui:1.6.10'
+}
+
+ext.postBuildExtras = {
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+}
