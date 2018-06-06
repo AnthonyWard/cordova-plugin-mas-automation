@@ -8,6 +8,8 @@ Automatically set up your project for CA MAS SDK 1.6.10 support
 
 `cordova-plugin-cocoapod-support`
 
+Cordova 8 CLI
+
 ## What It Does
 
 - Adds the cordova plugin for the CA MAS SDK
@@ -16,3 +18,7 @@ Automatically set up your project for CA MAS SDK 1.6.10 support
 - Forces at least Java Version 1.8 for Android
 
 More here: http://mas.ca.com/docs/cordova/1.6.10/guides/
+
+## Install
+
+`cordova plugin add https://github.com/AnthonyWard/cordova-plugin-mas-automation`
