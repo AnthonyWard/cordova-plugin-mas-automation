@@ -19,6 +19,23 @@ Cordova 8 CLI
 
 More here: http://mas.ca.com/docs/cordova/1.6.10/guides/
 
+## What It Doesn't Do
+
+Copy in the required `msso_config.json`, to do that put something like this in your `config.xml`
+
+```xml
+    <platform name="android">
+        <resource-file 
+            src="www/android_msso_config.json"
+            target="app/src/main/assets/msso_config.json" />
+    </platform>
+    <platform name="ios">
+        <resource-file
+            src="www/ios_msso_config.json"
+            target="msso_config.json" />
+    </platform>
+```
+
 ## Install
 
 `cordova plugin add https://github.com/AnthonyWard/cordova-plugin-mas-automation`
