@@ -2,7 +2,7 @@
 <plugin id="cordova-plugin-mas-automation" version="1.6.10" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-mas-core-pod</name>
     
-    <dependency id="cordova-plugin-mas-core" url="https://github.com/AnthonyWard/Cordova-MAS-Foundation" commit="23edb6ff87544687177347dd789a8555c985c0c5" />
+    <dependency id="cordova-plugin-mas-core" url="https://github.com/AnthonyWard/Cordova-MAS-Foundation" />
 
     <platform name="ios">
             
