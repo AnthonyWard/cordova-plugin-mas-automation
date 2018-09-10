@@ -14,7 +14,6 @@ Cordova 8 CLI
 
 - Adds the cordova plugin for the CA MAS SDK
 - Pulls does the SDK for Android and iOS via PODs and Gradle
-- Sets up the `NSLocationWhenInUseUsageDescription` for iOS
 - Forces at least Java Version 1.8 for Android
 
 More here: http://mas.ca.com/docs/cordova/1.6.10/guides/
@@ -33,6 +32,9 @@ Copy in the required `msso_config.json`, to do that put something like this in y
         <resource-file
             src="www/ios_msso_config.json"
             target="msso_config.json" />
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>The application needs a location to use the MAS backend services</string>
+        </edit-config>
     </platform>
 ```
 
