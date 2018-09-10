@@ -18,10 +18,6 @@
         <pod name="MASIdentityManagement" version="1.6.10" />
         <pod name="MASStorage" version="1.6.10" />
 
-        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-            <string>The application needs a location to use the MAS backend services</string>
-        </edit-config>
-
     </platform>
 
     <platform name="android">
