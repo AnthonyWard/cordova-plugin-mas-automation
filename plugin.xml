@@ -6,7 +6,7 @@
 
     <platform name="ios">
             
-        <dependency id="cordova-plugin-cocoapod-support"/>
+        <dependency id="cordova-plugin-cocoapod-support" url="https://github.com/AnthonyWard/cordova-plugin-cocoapods-support"/>
 
         <pods-config ios-min-version="9.0" use-frameworks="true">
             <source url="https://github.com/CocoaPods/Specs.git" />
